@@ -1,4 +1,3 @@
-import ThemeSwitch from "./ThemeSwitch"
 
 const NavBar = () => {
   return (
