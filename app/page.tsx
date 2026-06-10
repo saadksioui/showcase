@@ -6,12 +6,14 @@ import Tools from "./_components/Tools"
 
 const Home = () => {
   return (
-    <div className="container mx-auto px-4 py-8 flex flex-col gap-16">
+    <div className="bg-transparent">
       <NavBar />
-      <Hero />
-      <About />
-      <Tools />
-      <ContributionGraph />
+      <main className="mx-auto flex max-w-6xl flex-col gap-16 px-4 py-10 sm:px-6 lg:px-8">
+        <Hero />
+        <About />
+        <Tools />
+        <ContributionGraph />
+      </main>
     </div>
   )
 }
