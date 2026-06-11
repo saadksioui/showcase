@@ -5,26 +5,28 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
 const ThemeSwitch = () => {
-  const [mount, setMount] = useState(false);
+  const [mount, setMount] = useState<boolean>(false);
   const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
+  const currentTheme: string | undefined = theme === "system" ? systemTheme : theme;
 
-  useEffect(() => {
+  useEffect((): void => {
     setMount(true);
   }, []);
+
+  const handleThemeChange = (checked: boolean): void => {
+    if (checked) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
 
   return (
     <div className="flex items-center gap-2">
       <Sun className="text-black dark:text-white" />
       <Switch
         defaultChecked={currentTheme === "dark"}
-        onCheckedChange={(checked) => {
-          if (checked) {
-            setTheme("dark");
-          } else {
-            setTheme("light");
-          }
-        }}
+        onCheckedChange={handleThemeChange}
         checked={currentTheme === "dark"}
         disabled={!mount}
       />

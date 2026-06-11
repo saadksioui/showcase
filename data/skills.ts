@@ -1,4 +1,6 @@
-export const skills = [
+import type { Skill } from "@/lib/types";
+
+export const skills: Skill[] = [
         {
             "name": "C",
             "icon": "https://skillicons.dev/icons?i=c"

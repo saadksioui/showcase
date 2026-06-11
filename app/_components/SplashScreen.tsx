@@ -4,19 +4,19 @@ import { useEffect, useState } from "react";
 
 
 const SplashScreen = () => {
-    const [isMounted, setIsMounted] = useState(true);
-    const [isFading, setIsFading] = useState(false);
+    const [isMounted, setIsMounted] = useState<boolean>(true);
+    const [isFading, setIsFading] = useState<boolean>(false);
 
-    useEffect(() => {
-        const fadeTimer = setTimeout(() => {
+    useEffect((): (() => void) => {
+        const fadeTimer: ReturnType<typeof setTimeout> = setTimeout((): void => {
         setIsFading(true);
         }, 2000);
 
-        const mountTimer = setTimeout(() => {
+        const mountTimer: ReturnType<typeof setTimeout> = setTimeout((): void => {
         setIsMounted(false);
         }, 2500);
 
-        return () => {
+        return (): void => {
         clearTimeout(fadeTimer);
         clearTimeout(mountTimer);
         };
