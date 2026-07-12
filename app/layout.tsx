@@ -22,8 +22,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Saad Ksioui - Software Engineer",
-  description: "Hi, I'm Saad Ksioui. I'm a Software Engineer.",
+  title: "Saad Ksioui — Software Engineer",
+  description: "A modern, data-driven portfolio for Saad Ksioui focused on thoughtful digital experiences and polished web engineering.",
 };
 
 export default function RootLayout({
