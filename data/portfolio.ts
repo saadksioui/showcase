@@ -119,9 +119,15 @@ export const experience: ExperienceItem[] = [
 
 export const education: EducationItem[] = [
   {
+    school: "OFPPT",
+    degree: "Developement Digital",
+    period: "2022 — 2024",
+    details: "Focused on software engineering fundamentals, algorithms, systems, and modern development practices.",
+  },
+  {
     school: "1337 Coding School",
     degree: "Computer Science & Software Engineering",
-    period: "2022 — Present",
+    period: "2025 — Present",
     details: "Focused on software engineering fundamentals, algorithms, systems, and modern development practices.",
   },
 ];

@@ -12,7 +12,6 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs";
-import { buildWeeks } from "@/lib/covert_leetcode";
 import type { ContributionWeek, GitHubContributionWeek, LeetCodeCalendar } from "@/lib/types";
 import { useEffect, useState } from "react";
 
@@ -63,29 +62,6 @@ const Heatmap = ({ weeks = [] }: HeatmapProps) => {
 const ContributionGraph = () => {
   const [githubWeeks, setGithubWeeks] = useState<GitHubContributionWeek[]>([]);
   const [githubLoading, setGithubLoading] = useState<boolean>(true);
-  const [leetcodeWeeks, setLeetcodeWeeks] = useState<ContributionWeek[]>([]);
-  const [leetcodeLoading, setLeetcodeLoading] = useState<boolean>(true);
-
-  useEffect(() => {
-    const fetchLeetcode = async (): Promise<void> => {
-      try {
-        const response: Response = await fetch("/api/leetcode");
-        if (!response.ok) {
-          throw new Error("Failed to fetch contributions");
-        }
-        const result: LeetCodeCalendar = await response.json();
-        const weeks: ContributionWeek[] = buildWeeks(result);
-
-        setLeetcodeWeeks(weeks);
-      } catch (error: unknown) {
-        console.error(error);
-      } finally {
-        setLeetcodeLoading(false);
-      }
-    };
-
-    fetchLeetcode();
-  }, []);
 
   useEffect(() => {
     const fetchContributions = async (): Promise<void> => {
@@ -151,25 +127,6 @@ const ContributionGraph = () => {
                   <p>Loading contributions...</p>
                 ) : (
                   <Heatmap weeks={githubWeeks} />
-                )}
-              </CardContent>
-            </Card>
-          </TabsContent>
-
-          <TabsContent value="leetcode">
-            <Card>
-              <CardHeader>
-                <CardTitle>LeetCode Activity</CardTitle>
-                <CardDescription>
-                  Submission activity over the last year.
-                </CardDescription>
-              </CardHeader>
-
-              <CardContent>
-                {leetcodeLoading ? (
-                  <p>Loading contributions...</p>
-                ) : (
-                  <Heatmap weeks={leetcodeWeeks} />
                 )}
               </CardContent>
             </Card>

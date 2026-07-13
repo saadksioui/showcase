@@ -6,11 +6,9 @@ import ContributionGraph from "./_components/ContributionGraph";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-transparent text-foreground">
-      <NavBar/>
+    <div className="max-w-6xl mx-auto px-4 py-4 sm:px-6 lg:px-8 min-h-screen bg-transparent text-foreground">
+      <NavBar />
       <Hero/>
-      <ContributionGraph/>
-      <Projects/>
     </div>
   );
 };
