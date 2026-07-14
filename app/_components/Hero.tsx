@@ -1,33 +1,23 @@
-"use client"
-import Image from "next/image"
-import GithubIcon from '@iconify-react/mdi/github'
-import LinkedinIcon from '@iconify-react/mdi/linkedin'
-import LeetcodeIcon from '@iconify-react/fa7-brands/leetcode'
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Download } from "lucide-react"
+import { IoDocumentTextOutline } from "react-icons/io5";
+import ContributionGraph from "./ContributionGraph";
 
 const Hero = () => {
-  const links = [
-    {
-      link: "https://github.com/saadksioui",
-      component: <GithubIcon height="1.8em" />,
-    },
-    {
-      link: "https://www.linkedin.com/in/saadksioui/",
-      component: <LinkedinIcon height="1.8em" />,
-    },
-    {
-      link: "https://leetcode.com/u/saadksioui/",
-      component: <LeetcodeIcon height="1.8em" />,
-    },
-  ];
-
   return (
     <section className="mt-5">
-      <h1>Saad Ksioui</h1>
-      <h3>Software Developer</h3>
-      <p>Casablanca, Morocco</p>
+      <h1 className="text-3xl font-bold">Saad Ksioui</h1>
+      <h3 className="text-xl font-medium text-gray-300">Software Developer</h3>
+      <p className="text-gray-300">Casablanca, Morocco</p>
+
+      <Button className="rounded mt-5">
+        <a className="flex items-center justify-between gap-2" href={"/resume.pdf"} download>
+          <IoDocumentTextOutline color="black" size={15}/>
+          <span>Resume</span>
+        </a>
+      </Button>
+      <div>
+        <ContributionGraph />
+      </div>
     </section>
   )
 }
