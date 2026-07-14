@@ -15,8 +15,10 @@ export interface ExperienceItem {
   role: string;
   period: string;
   location: string;
+  type?: string;
   summary: string;
   highlights: string[];
+  tags?: string[];
 }
 
 export interface EducationItem {
@@ -63,6 +65,7 @@ export const experience: ExperienceItem[] = [
   {
     company: "Freelance Studio",
     role: "Frontend Engineer",
+    type: "Full-time",
     period: "2024 — Present",
     location: "Remote",
     summary:
@@ -71,10 +74,20 @@ export const experience: ExperienceItem[] = [
       "Built polished landing pages and product experiences with a strong focus on performance and conversion.",
       "Collaborated closely with clients to translate product goals into component-driven interfaces.",
     ],
+    tags: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Performance",
+      "UI Design",
+      "Remote Work",
+    ],
   },
   {
     company: "1337 Coding School",
     role: "Student & Problem Solver",
+    type: "Part-time",
     period: "2022 — Present",
     location: "Rabat",
     summary:
@@ -82,6 +95,13 @@ export const experience: ExperienceItem[] = [
     highlights: [
       "Strengthened problem-solving, systems thinking, and clean coding habits through daily technical practice.",
       "Built projects that emphasize architecture, maintainability, and modern UI patterns.",
+    ],
+    tags: [
+      "Algorithms",
+      "Software Engineering",
+      "Teamwork",
+      "Problem Solving",
+      "Project Work",
     ],
   },
 ];
