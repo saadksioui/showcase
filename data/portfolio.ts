@@ -2,11 +2,9 @@ export interface Profile {
   name: string;
   role: string;
   tagline: string;
+  quote: string;
   location: string;
   email: string;
-  availability: string;
-  cvUrl: string;
-  avatar: string;
   heroSummary: string;
   about: string[];
 }
@@ -53,11 +51,9 @@ export const profile: Profile = {
   name: "Saad Ksioui",
   role: "Software Engineer",
   tagline: "Designing thoughtful digital products with clarity, craft, and calm execution.",
+  quote: "If you don't take risks, you can't create a future. — Monkey D. Luffy (One Piece)",
   location: "Based in Morocco",
   email: "saad@ksioui.dev",
-  availability: "Available for select freelance and product collaborations",
-  cvUrl: "/cv.pdf",
-  avatar: "/assets/avatar.svg",
   heroSummary:
     "I build polished web experiences that balance performance, accessibility, and elegant interaction design.",
   about: [
@@ -68,13 +64,6 @@ export const profile: Profile = {
   ],
 };
 
-export const navigation = [
-  { id: "about", label: "About" },
-  { id: "skills", label: "Skills" },
-  { id: "experience", label: "Experience" },
-  { id: "projects", label: "Projects" },
-  { id: "contact", label: "Contact" },
-];
 
 export const skillGroups: SkillGroup[] = [
   {

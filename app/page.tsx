@@ -1,8 +1,6 @@
-import { navigation, profile, socialLinks } from "@/data/portfolio";
 import NavBar from "./_components/NavBar";
 import Hero from "./_components/Hero";
 import Projects from "./_components/Projects";
-import ContributionGraph from "./_components/ContributionGraph";
 import About from "./_components/About";
 
 const Home = () => {
@@ -11,6 +9,7 @@ const Home = () => {
       <NavBar />
       <Hero/>
       <About/>
+      <Projects/>
     </div>
   );
 };
