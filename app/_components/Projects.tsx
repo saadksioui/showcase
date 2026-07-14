@@ -40,7 +40,7 @@ const Project = ({ title, done, description, technologies, demoUrl, githubUrl }:
         <p className="text-gray-300 mt-2">{description}</p>
         <div className="flex flex-wrap mt-2">
           {technologies.map((tech) => (
-            <span key={tech} className="border border-gray-300 text-xs font-medium mr-2 px-2.5 py-0.5 rounded">
+            <span key={tech} className="border-[0.5px] border-gray-900 text-xs font-medium mr-2 p-1 rounded">
               {tech}
             </span>
           ))}
@@ -54,7 +54,7 @@ const Project = ({ title, done, description, technologies, demoUrl, githubUrl }:
 
 const Projects = () => {
   return (
-    <div className="w-full">
+    <div className="w-full mt-5">
       <h2 className="text-2xl font-bold mb-4">Projects</h2>
       <div className="space-y-4">
         {

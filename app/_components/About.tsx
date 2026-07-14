@@ -5,8 +5,8 @@ const About = () => {
     <section className="mt-5">
       <div className="max-w-4xl space-y-6">
         <div>
-          <h1 className="text-3xl font-bold mb-2">About me</h1>
-          <h3 className="text-lg font-medium text-gray-400">{profile.heroSummary}</h3>
+          <h2 className="text-2xl font-semibold mb-2">About me</h2>
+          <h4 className="text-lg font-medium text-gray-400">{profile.heroSummary}</h4>
         </div>
 
         <div className="text-gray-300 text-sm space-y-3">

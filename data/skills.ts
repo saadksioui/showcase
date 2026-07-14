@@ -42,27 +42,27 @@ export const skills: Skill[] = [
             "icon": "https://skillicons.dev/icons?i=linux"
         },
         {
-            "name": "mongodb",
+            "name": "MongoDB",
             "icon": "https://skillicons.dev/icons?i=mongodb"
         },
         {
-            "name": "nextjs",
+            "name": "Next.js",
             "icon": "https://skillicons.dev/icons?i=nextjs"
         },
         {
-            "name": "nodejs",
+            "name": "Node.js",
             "icon": "https://skillicons.dev/icons?i=nodejs"
         },
         {
-            "name": "postgres",
+            "name": "PostgreSQL",
             "icon": "https://skillicons.dev/icons?i=postgres"
         },
         {
-            "name": "react",
+            "name": "React",
             "icon": "https://skillicons.dev/icons?i=react"
         },
         {
-            "name": "tailwind",
+            "name": "Tailwind CSS",
             "icon": "https://skillicons.dev/icons?i=tailwind"
         }
     ]

@@ -9,10 +9,6 @@ export interface Profile {
   about: string[];
 }
 
-export interface SkillGroup {
-  title: string;
-  items: string[];
-}
 
 export interface ExperienceItem {
   company: string;
@@ -62,21 +58,6 @@ export const profile: Profile = {
   ],
 };
 
-
-export const skillGroups: SkillGroup[] = [
-  {
-    title: "Product engineering",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    title: "Interface systems",
-    items: ["Design systems", "Accessibility", "Motion", "Responsive UI"],
-  },
-  {
-    title: "Delivery & collaboration",
-    items: ["Git", "Vercel", "Agile delivery", "Code reviews"],
-  },
-];
 
 export const experience: ExperienceItem[] = [
   {
