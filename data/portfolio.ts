@@ -32,13 +32,11 @@ export interface EducationItem {
 
 export interface ProjectItem {
   title: string;
-  summary: string;
   description: string;
   technologies: string[];
   github: string;
   demo: string;
-  image: string;
-  featured?: boolean;
+  done?: boolean;
 }
 
 export interface SocialLink {
@@ -125,35 +123,13 @@ export const education: EducationItem[] = [
 export const projects: ProjectItem[] = [
   {
     title: "Northstar Studio",
-    summary: "A refined portfolio experience for a modern creative agency.",
     description:
       "A cinematic one-page experience with editorial layout, gentle motion, and quick load times to help a brand stand out.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/saadksioui/showcase",
     demo: "https://example.com",
-    image: "/assets/project-northstar.svg",
-    featured: true,
-  },
-  {
-    title: "Signal Board",
-    summary: "An elegant product dashboard for visualizing user momentum.",
-    description:
-      "A minimal analytics surface designed for quick decision-making, responsive layouts, and calm interaction patterns.",
-    technologies: ["React", "TypeScript", "Tailwind CSS"],
-    github: "https://github.com/saadksioui/showcase",
-    demo: "https://example.com",
-    image: "/assets/project-signal.svg",
-  },
-  {
-    title: "Atelier Notes",
-    summary: "A lightweight writing and planning workspace with a premium feel.",
-    description:
-      "A focused note-taking app that balances usability, speed, and timeless visuals without unnecessary clutter.",
-    technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
-    github: "https://github.com/saadksioui/showcase",
-    demo: "https://example.com",
-    image: "/assets/project-atelier.svg",
-  },
+    done: true,
+  }
 ];
 
 export const socialLinks: SocialLink[] = [
