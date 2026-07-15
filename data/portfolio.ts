@@ -51,7 +51,7 @@ export const profile: Profile = {
   location: "Based in Morocco",
   email: "saad@ksioui.dev",
   heroSummary:
-    "I build polished web experiences that balance performance, accessibility, and elegant interaction design.",
+    "Software Developer with a focus on building clean, scalable, and impactful digital solutions.",
   about: [
     "Hi, I'm Saad Ksioui, a software developer who loves creating useful programs. Web development is something which I really love because when building web projects, I get to solve different issues and create interesting user experiences.",
     "No matter whether the project is a community platform, SaaS service, my own portfolio website or any kind of productivity application, for me, the process of making something out of an idea is what is truly thrilling. In general, there are two major things I like about developing software – challenges and constant learning.",

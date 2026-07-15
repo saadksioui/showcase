@@ -19,7 +19,7 @@ const NavBar = () => {
         <div className="flex justify-between items-center gap-1">
           {
             socialLinks.map((social, index) => (
-              <Link key={index} href={social.href}>
+              <Link key={index} target="_blank" href={social.href}>
                 <Button variant="outline" size="sm" asChild>
                   <div className="flex items-center justify-between gap-2">
                     {social.icon === 'github' ? <FaGithub size={10} /> : social.icon === 'linkedin' ? <FaLinkedin size={10} /> : social.icon === 'mail' ? <Mail size={10} /> : social.icon === 'leetcode' ? <SiLeetcode size={10} /> : ''}
