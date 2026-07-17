@@ -71,39 +71,20 @@ export const experience: ExperienceItem[] = [
     summary:
       "Designing and shipping sleek web products for founders, small teams, and creators who need premium digital presence.",
     highlights: [
-      "Built polished landing pages and product experiences with a strong focus on performance and conversion.",
-      "Collaborated closely with clients to translate product goals into component-driven interfaces.",
+      "Developed a comprehensive support ticket management website with an intuitive interface, incorporating a database system that tracked over 5,000 tickets daily.",
+      "Implemented automatic user notifications for ticket updates, resulting in a 30% decrease in response time and an increase in customer satisfaction by 15%.",
+      "Collaborated with cross-functional teams to streamline the integration of the ticket management website, reducing manual data entry errors by 20% and saving over 100 work hours per month."
     ],
     tags: [
-      "React.js",
-      "Next.js",
+      "React.js", 
       "TypeScript",
-      "Tailwind CSS",
-      "Performance",
-      "UI Design",
-      "Remote Work",
+      "PHP",
+      "Laravel",
+      "MySQL",
+      "Prometheus.io",
+      "Grafana"
     ],
-  },
-  {
-    company: "1337 Coding School",
-    role: "Student & Problem Solver",
-    type: "Part-time",
-    period: "2022 — Present",
-    location: "Rabat",
-    summary:
-      "Developing core computer science fundamentals through intensive software engineering practice and team-based projects.",
-    highlights: [
-      "Strengthened problem-solving, systems thinking, and clean coding habits through daily technical practice.",
-      "Built projects that emphasize architecture, maintainability, and modern UI patterns.",
-    ],
-    tags: [
-      "Algorithms",
-      "Software Engineering",
-      "Teamwork",
-      "Problem Solving",
-      "Project Work",
-    ],
-  },
+  }
 ];
 
 export const education: EducationItem[] = [
