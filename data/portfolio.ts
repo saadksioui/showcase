@@ -104,7 +104,8 @@ export const experience: ExperienceItem[] = [
       "PostgreSQL",
       "Docker",
       "WordPress",
-      "Figma"
+      "Figma",
+      "Tailwind CSS"
     ],
   }
 ];
