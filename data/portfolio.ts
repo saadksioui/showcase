@@ -63,13 +63,13 @@ export const profile: Profile = {
 
 export const experience: ExperienceItem[] = [
   {
-    company: "Freelance Studio",
-    role: "Frontend Engineer",
-    type: "Full-time",
-    period: "2024 — Present",
-    location: "Remote",
+    company: "DGM (Direction generale de la meteorologie)",
+    role: "Full Stack Developer",
+    type: "Internship",
+    period: "Apr 2024 - Sep 2024",
+    location: "Casablanca, Morocco",
     summary:
-      "Designing and shipping sleek web products for founders, small teams, and creators who need premium digital presence.",
+      "Developed a support ticket website tracking 5,000+ daily tickets, cutting response times by 30% and saving 100+ work hours monthly through automation and streamlined integrations.",
     highlights: [
       "Developed a comprehensive support ticket management website with an intuitive interface, incorporating a database system that tracked over 5,000 tickets daily.",
       "Implemented automatic user notifications for ticket updates, resulting in a 30% decrease in response time and an increase in customer satisfaction by 15%.",
@@ -83,6 +83,28 @@ export const experience: ExperienceItem[] = [
       "MySQL",
       "Prometheus.io",
       "Grafana"
+    ],
+  },
+  {
+    company: "TEAMWAY",
+    role: "Full Stack Developer",
+    type: "Internship",
+    period: "May 2025 - Oct 2025",
+    location: "Casablanca, Morocco",
+    summary: "Redesigned the corporate website and developed a custom content generation automation app, significantly boosting brand visibility while optimizing internal workflows and production efficiency.",
+    highlights: [
+      "Led the comprehensive redesign of the company website, modernizing the user interface and enhancing digital presence to drive higher user engagement.",
+      "Developed and deployed an innovative content generation automation application, streamlining creative workflows and significantly reducing time-to-market for digital assets.",
+      "Optimized internal operational processes by integrating automated tools, eliminating manual bottlenecks and improving cross-team efficiency."
+    ],
+    tags: [
+      "React.js", 
+      "TypeScript",
+      "Next.js",
+      "PostgreSQL",
+      "Docker",
+      "WordPress",
+      "Figma"
     ],
   }
 ];
