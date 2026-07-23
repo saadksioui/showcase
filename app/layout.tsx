@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Merriweather } from "next/font/google";
 import "./globals.css";
 import SplashScreen from "./_components/SplashScreen";
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({
   variable: "--font-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body className="min-h-full bg-background text-foreground">
         <SplashScreen />
         {children}
+        <Analytics/>
       </body>
     </html>
   );
