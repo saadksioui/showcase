@@ -33,7 +33,7 @@ export interface ProjectItem {
   description: string;
   technologies: string[];
   github: string;
-  demo: string;
+  demo?: string;
   done?: boolean;
 }
 
@@ -127,14 +127,22 @@ export const education: EducationItem[] = [
 
 export const projects: ProjectItem[] = [
   {
-    title: "Northstar Studio",
+    title: "LinkedHire",
     description:
-      "A cinematic one-page experience with editorial layout, gentle motion, and quick load times to help a brand stand out.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    github: "https://github.com/saadksioui/showcase",
-    demo: "https://example.com",
+      "LinkedHire is a modern web application built with Next.js, designed to streamline professional networking and hiring processes. Leveraging the latest features of Next.js, this project offers a fast, scalable, and developer-friendly foundation for building robust web experiences.",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Axios", "ShadCN UI"],
+    github: "https://github.com/saadksioui/linkedhire",
+    demo: "https://linkedhire.vercel.app/",
     done: true,
-  }
+  },
+  {
+    title: "Fly-in",
+    description:
+      "Fly-in is a Python-based simulation engine and pathfinding algorithm designed to route a fleet of autonomous drones through a complex, dynamic network.",
+    technologies: ["Python", "Pygame", "Graph Theory", "Dijkstra's Algorithm", "MAPF (Multi-Agent Pathfinding)"],
+    github: "https://github.com/saadksioui/fly-in",
+    done: true,
+  },
 ];
 
 export const socialLinks: SocialLink[] = [

@@ -5,11 +5,14 @@ import ContributionGraph from "./ContributionGraph";
 const Hero = () => {
   return (
     <section className="mt-5">
-      <h1 className="text-3xl font-bold">
+      <h1 className="flex items-center gap-2 text-3xl font-bold">
         Saad Ksioui
-        <div className="">
-          <div></div>
-          <span></span>
+        <div className="mt-2 flex items-center gap-2">
+          <span className="relative flex h-2.5 w-2.5">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+            <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-500"></span>
+          </span>
+          <span className="text-sm font-medium text-green-400">Open to Work</span>
         </div>
       </h1>
       <h3 className="text-xl font-medium text-gray-300">Software Developer</h3>

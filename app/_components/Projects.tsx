@@ -23,12 +23,14 @@ const Project = ({ title, done, description, technologies, demoUrl, githubUrl }:
             )}
           </h3>
           <div className="flex space-x-4">
-            <Link href={demoUrl} target="_blank" className="group flex items-center gap-2 text-gray-300 mt-4 transition-colors duration-300 hover:text-white">
+            {
+              demoUrl && (<Link href={demoUrl} target="_blank" className="group flex items-center gap-2 text-gray-300 mt-4 transition-colors duration-300 hover:text-white">
               <MdOutlineMonitor />
               <span className="max-w-0 overflow-hidden whitespace-nowrap text-sm opacity-0 transition-all duration-300 ease-out group-hover:max-w-14 group-hover:opacity-100">
                 Demo
               </span>
-            </Link>
+            </Link>)
+            }
             <Link href={githubUrl} target="_blank" className="group flex items-center gap-2 text-gray-300 mt-4 transition-colors duration-300 hover:text-white">
               <LuGithub />
               <span className="max-w-0 overflow-hidden whitespace-nowrap text-sm opacity-0 transition-all duration-300 ease-out group-hover:max-w-18 group-hover:opacity-100">
@@ -65,7 +67,7 @@ const Projects = () => {
               title={project.title}
               description={project.description}
               technologies={project.technologies}
-              demoUrl={project.demo}
+              demoUrl={project.demo ? project.demo : ""}
               githubUrl={project.github}
             />
           ))
